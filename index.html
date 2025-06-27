@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可爱贪吃蛇 🐍</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="game-title">🐍 可爱贪吃蛇</h1>
+            <div class="score-board">
+                <div class="score">
+                    <span class="score-label">得分:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="high-score">
+                    <span class="score-label">最高分:</span>
+                    <span id="highScore">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="gameOverlay" class="game-overlay hidden">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">游戏开始</h2>
+                    <p id="overlayMessage">按空格键开始游戏</p>
+                    <button id="startButton" class="game-button">开始游戏</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-section">
+                <h3>🎮 游戏控制</h3>
+                <div class="control-grid">
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span class="action">向上</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↓</span>
+                        <span class="action">向下</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">←</span>
+                        <span class="action">向左</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">→</span>
+                        <span class="action">向右</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">空格</span>
+                        <span class="action">暂停/继续</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">R</span>
+                        <span class="action">重新开始</span>
+                    </div>
+                </div>
+                <p class="touch-hint">📱 移动设备：滑动屏幕控制方向</p>
+            </div>
+        </div>
+
+        <footer class="game-footer">
+            <p>🌟 享受游戏，挑战自己的最高分！</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

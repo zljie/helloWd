@@ -1,0 +1,27 @@
+{
+  "name": "cute-snake-game",
+  "version": "1.0.0",
+  "description": "一个可爱的贪吃蛇游戏",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build step needed for static site'",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "html5",
+    "canvas",
+    "javascript",
+    "cute",
+    "贪吃蛇"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cute-snake-game.git"
+  },
+  "homepage": "https://your-vercel-app.vercel.app"
+}
